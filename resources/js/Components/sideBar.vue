@@ -99,8 +99,51 @@
                     {
                         name: "Рөлдер",
                         font: "fa-cogs",
-                        route_name: "admin.index",
-                        menu_active: ["admin"],
+                        route_name: "admin.roles.index",
+                        menu_active: ["admin.roles"],
+                    },
+                    {
+                        name: "Олимпиада",
+                        font: "fas fa-star",
+                        menu_active: [
+                            "admin.olimpiadaBagyty",
+                            "admin.olimpiadaTizim",
+                            "admin.olimpiadaSuraktar",
+                            "admin.olimpiadaOption",
+                            "admin.olimpiadaAppeals",
+                            "admin.oblys",
+                        ],
+                        route_name: "",
+                        childs_items: [{
+                                name: "Бағыт",
+                                font: "fa-list",
+                                route_name: "admin.olimpiadaBagyty.index",
+                                menu_active: [
+                                    "admin.olimpiadaBagyty",
+                                    "admin.olimpiadaSuraktar",
+                                    "admin.olimpiadaOption",
+                                ],
+                            },
+                            {
+                                name: "Қатысушылар",
+                                font: "fa-users",
+                                route_name: "admin.olimpiadaTizim.index",
+                                menu_active: ["admin.olimpiadaTizim"],
+                            },
+                            {
+                                name: "Аппеляция",
+                                font: "fa-comment-medical",
+                                route_name: "admin.olimpiadaAppeals.index",
+                                menu_active: ["admin.olimpiadaAppeals"],
+                            },
+                            {
+                                name: "Облыстар",
+                                font: "fa-comment-medical",
+                                route_name: "admin.oblys.index",
+                                menu_active: ["admin.oblys"],
+                            },
+                            
+                        ],
                     },
                 ],
             }

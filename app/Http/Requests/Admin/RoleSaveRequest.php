@@ -16,10 +16,7 @@ class RoleSaveRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => [
-                'kk' => 'required',
-                'ru' => 'required',
-            ]
+            'name' => 'required'
         ];
     }
 }

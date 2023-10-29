@@ -5,7 +5,7 @@ import {createInertiaApp} from '@inertiajs/inertia-vue3'
 import Layout from './Shared/Layout.vue'
 import {InertiaProgress} from '@inertiajs/progress'
 import Helper from './Shared/packages/Helper.vue'
-import CKEditor from '@ckeditor/ckeditor5-vue'
+//import CKEditor from '@ckeditor/ckeditor5-vue'
 import route from 'ziggy'
 import {Ziggy} from './ziggy'
 
@@ -19,6 +19,7 @@ createInertiaApp({
             case 2: return import(`./Pages/${splitName[0]}/${splitName[1]}.vue`);
             case 3: return import(`./Pages/${splitName[0]}/${splitName[1]}/${splitName[2]}.vue`);
             case 4: return import(`./Pages/${splitName[0]}/${splitName[1]}/${splitName[2]}/${splitName[3]}.vue`);
+            case 5: return import(`./Pages/${splitName[0]}/${splitName[1]}/${splitName[2]}/${splitName[3]}/${splitName[4]}.vue`);
         }
     },
     setup({
@@ -34,7 +35,7 @@ createInertiaApp({
                 }
             })
             .use(plugin)
-            .use(CKEditor)
+//            .use(CKEditor)
             .mixin({
                 methods: {
                     route,
