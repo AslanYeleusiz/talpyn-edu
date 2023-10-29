@@ -1,1 +1,0 @@
-import{l as t}from"./layout-9e957faa.js";import{_ as e}from"./_plugin-vue_export-helper-c27b6911.js";import{r,o as n,c as s}from"./app-20f48993.js";const c={components:{layout:t}};function a(p,m,_,f,l,u){const o=r("layout");return n(),s(o)}const x=e(c,[["render",a]]);export{x as default};
