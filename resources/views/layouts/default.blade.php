@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>CodeDesign Project</title>
+    <title>Talpyn-edu.kz | Басты бет</title>
 
     <link rel="stylesheet" type="text/css" href="{{asset('css/responsive/main.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/responsive/responsive-mobile.css')}}">
